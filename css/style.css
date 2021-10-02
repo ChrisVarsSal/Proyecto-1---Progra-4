@@ -284,3 +284,18 @@ footer .rf {
 #cuenta #boton:hover{
 	background: slategrey;
 }
+
+#pedidos{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: black;
+	width: 7%;
+	border: 0;
+	padding: 0.9375em;
+	font-size: 0.875em;
+	cursor: pointer;
+}
+#pedidos #boton:hover{
+	background: slategrey;
+}
