@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action="" method="POST" id="form">
+<form action="" method="POST" id="formpedidos">
     <div class="form">
         <h2>Informacion:</h2>
         <div class="grupo">

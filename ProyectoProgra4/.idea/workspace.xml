@@ -10,9 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fb2209b-e4a7-447a-9794-c14e6d8de1c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resultado.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pro/en/solicitudes/Contacto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/Contactenos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/PContactos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/Pedidos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/VerificarRecaptcha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/VerificarRecaptcha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Respuestapedido.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pedido.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/validar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/validar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/Respuestapedido.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/WEB-INF/classes/com/pro/ui/proyectoprogra4/Pedidos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/WEB-INF/classes/com/pro/ui/proyectoprogra4/Pedidos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/WEB-INF/classes/com/pro/ui/proyectoprogra4/VerificarRecaptcha.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/WEB-INF/classes/com/pro/ui/proyectoprogra4/VerificarRecaptcha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/js/validar.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/js/validar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pro/ui/proyectoprogra4/Pedidos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pro/ui/proyectoprogra4/Pedidos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pro/ui/proyectoprogra4/VerificarRecaptcha.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pro/ui/proyectoprogra4/VerificarRecaptcha.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
+        <option value="Jspx File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -47,11 +62,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ContactenosCaptcha2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -63,7 +79,13 @@
       <recent name="C:\UNA\Progra 4\Proyecto-1---Progra-4\ProyectoProgra4\src\main\webapp\CSS" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.53">
+    <configuration name="PContactos.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/ProyectoProgra4/src/main/webapp/PContactos.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/ProyectoProgra4/src/main/webapp/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 9.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="ProyectoProgra4:war exploded">
@@ -74,6 +96,93 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="7aabdda7-c37b-49d1-a51b-2cdc17492bbb" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57712" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ProyectoProgra4:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="pedido.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/pedido.jsp" />
+      <deployment>
+        <artifact name="ProyectoProgra4:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ProyectoProgra4_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="37df1476-8d33-48c8-af66-557285889ac1" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -102,6 +211,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Tomcat Server.pedido.jsp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -115,6 +229,11 @@
       <workItem from="1633051034622" duration="5213000" />
       <workItem from="1633057280774" duration="3225000" />
       <workItem from="1633143681488" duration="812000" />
+      <workItem from="1633145694189" duration="2252000" />
+      <workItem from="1633206343821" duration="16853000" />
+      <workItem from="1633278353372" duration="2669000" />
+      <workItem from="1633281097013" duration="713000" />
+      <workItem from="1633281900161" duration="313000" />
     </task>
     <servers />
   </component>
@@ -135,5 +254,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProyectoProgra4$Tomcat_9_0_53.ic" NAME="Tomcat 9.0.53 Coverage Results" MODIFIED="1633232994098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

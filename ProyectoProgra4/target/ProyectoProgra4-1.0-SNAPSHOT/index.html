@@ -29,6 +29,10 @@
                 <label for="">Email</label>
             </div>
             <div class="grupo">
+                <input type="text" name="email" id="email" required><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
+            <div class="grupo">
                 <input type="text" name="miembro" id="miembro"required><span class="barra"></span>
                 <label for="">Tarjeta de Miembro</label>
             </div>
@@ -64,11 +68,13 @@
                 <textarea id="extrainfo" name="extrainfo" rows="4" cols="50">
                 </textarea>
             </div>
-            <div class="g-recaptcha"  data-sitekey="6LemvZccAAAAAAHXe4dqgPenDLUPf-MsVVC9DuHq"></div>
-            <button type="submit">Realizar pedido</button>
+            <div class="g-recaptcha"
+                 data-sitekey="6LemvZccAAAAAAHXe4dqgPenDLUPf-MsVVC9DuHq"></div>
+            <button type="submit" value="Send Message" >Realizar pedido</button>
             <p class="warnings" id="warnings"></p>
         </div>
     </form>
+
     <script defer src="js/validar.js"></script>
 </body>
 </html>

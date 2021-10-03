@@ -49,18 +49,18 @@ public class Pedidos extends HttpServlet {
             solicitud.setGenero(generos);
             solicitud.setInfo(info);
 
+
+
             // get reCAPTCHA request param
-            String gRecaptchaResponse = request
-                    .getParameter("g-recaptcha-response");
+            String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
             System.out.println(gRecaptchaResponse);
             boolean verify = VerificarRecaptcha.verify(gRecaptchaResponse);
 
             if (verify) {
                 request.setAttribute("Solicitud", solicitud);
-                request.getRequestDispatcher("Respuestapedido.jsp").forward(request,response);
+                request.getRequestDispatcher("pedido.jsp").forward(request, response);
             } else {
-                RequestDispatcher rd = getServletContext().getRequestDispatcher(
-                        "/index.html");
+                RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.html");
                 out.println("<font color=red>Fallaste el captcha.</font>");
                 rd.include(request, response);
                 }
