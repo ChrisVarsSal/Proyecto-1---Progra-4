@@ -10,28 +10,24 @@
     <div id="header">
         <span id="nombre">Ilusion Films Costa Rica</span>
         <img src="css/images/logo.png" id="logo">
-        <div id="botones">
-            <div id="registro">
-                <a id="boton" class="boton" href="registro/index.html">Ingresar</a>
-            </div>
-            <div id="cuenta">
-                <a id="botonC" class="boton" href="cuenta/index.html">Registrarse</a>
-            </div>
-            <div id="pedidos">
-                <a id="botonP" class="boton" href="ProyectoProgra4/src/main/webapp/index.html">Pedidos</a>
-            </div>
+        <div id="submenu">
+            <ul>
+                <li><a id="boton" class="boton" href="registro/index.html">  Ingresar</a></li>
+                <li><a id="botonC" class="boton" href="cuenta/index.html">Registrarse</a></li>
+                <li><a id="botonP" class="boton" href="ProyectoProgra4/src/main/webapp/index.html">Pedidos</a></li>
+            </ul>
         </div>
         <div id="menu">
                 <ul>
-                    <li><a class="active" href="#">Inicio</a></li>
-                    <li><a href="#">Historia</a></li>
+                    <li><a class="active" href="#">  Inicio</a></li>
+                    <li><a class="boton" href="historia/index.html" href="#">Historia</a></li>
                     <li><a href="#">Misión y Visión</a>
                         <ul>
-                            <li><a href="#">Misión</a></li>
-                            <li><a href="#">Vision</a></li>
+                            <li><a class="boton" href="mision/index.html" href="#">Misión</a></li>
+                            <li><a class="boton" href="vision/index.html" href="#">Vision</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Catálogo</a></li>
+                    <li><a class="boton" href="catalogo/index.html" href="#">Catálogo</a></li>
                     <li><a href="#">Contactenos</a></li>
                     <li><a href="#">Visitenos</a></li>
                 </ul>
@@ -47,8 +43,8 @@
                 <div class="movie">
                     <div class="movie-image">
                         <span class="play" style="display: none;">
-                            <span class="name">Black Widow</span>
-                            <span class="sinopsis">Una peligrosa conspiración,
+                            <span id="titulo1" class="card-options-info-excerpts">Black Widow</span>
+                            <span id="sinopsis1" class="card-options-info-excerpts">Una peligrosa conspiración,
                                 relacionada con su pasado, persigue a Natasha Romanoff,
                                 también conocida como Viuda Negra. La agente tendrá que lidiar con
                                 las consecuencias de haber sido espía, así como con las relaciones rotas,
@@ -61,8 +57,8 @@
                 <div class="movie">
                     <div class="movie-image">
                       <span class="play" style="display: none;">
-                            <span class="name">The Mitchells vs The Machines</span>
-                            <span class="sinopsis">El viaje por carretera de la familia Mitchell,
+                            <span id="titulo2" class="card-options-info-excerpts">The Mitchells vs The Machines</span>
+                            <span id="sinopsis2" class="card-options-info-excerpts">El viaje por carretera de la familia Mitchell,
                                 que va a acompañar a uno de sus hijos a su primer día de universidad,
                                 se ve interrumpido por una insurrección tecnológica que amenaza
                                 a la humanidad.</span>
@@ -74,8 +70,8 @@
                 <div class="movie">
                     <div class="movie-image">
                         <span class="play" style="display: none;">
-                            <span class="name">Godzilla vs King Kong</span>
-                            <span class="sinopsis">Godzilla y Kong, dos de las fuerzas más poderosas
+                            <span id="titulo3" class="card-options-info-excerpts">Godzilla vs King Kong</span>
+                            <span id="sinopsis3" class="card-options-info-excerpts">Godzilla y Kong, dos de las fuerzas más poderosas
                                 de un planeta habitado por aterradoras criaturas, se enfrentan en un
                                 espectacular combate que sacude los cimientos de la humanidad.
                                 Monarch se embarca en una misión de alto riesgo y pone rumbo hacia
@@ -90,8 +86,8 @@
                 <div class="movie">
                     <div class="movie-image">
                         <span class="play" style="display: none;">
-                            <span class="name">Jungle Cruise</span>
-                            <span class="sinopsis">Película basada en el paseo en un parque temático de
+                            <span id="titulo4" class="card-options-info-excerpts">Jungle Cruise</span>
+                            <span id="sinopsis4" class="card-options-info-excerpts">Película basada en el paseo en un parque temático de
                                 Disneyland donde un pequeño barco fluvial lleva a un grupo de viajeros a
                                 través de una jungla llena de peligrosos animales y reptiles, pero con un
                                 elemento sobrenatural.</span>
@@ -103,8 +99,8 @@
                 <div class="movie last">
                     <div class="movie-image">
                        <span class="play" style="display: none;">
-                            <span class="name">Free Guy</span>
-                            <span class="sinopsis">Un cajero de un banco descubre que en realidad es un
+                            <span id="titulo5" class="card-options-info-excerpts">Free Guy</span>
+                            <span id="sinopsis5" class="card-options-info-excerpts">Un cajero de un banco descubre que en realidad es un
                                 personaje sin papel dentro de un brutal videojuego de mundo
                                 interactivo.</span>
                         </span>
@@ -122,8 +118,8 @@
                 <div class="movie">
                     <div class="movie-image">
                         <span class="play" style="display: none;">
-                            <span class="name">Mortal Kobat</span>
-                            <span class="sinopsis">Cole Young, el luchador de MMA, acostumbrado a recibir
+                            <span id="titulo6" class="card-options-info-excerpts">Mortal Kobat</span>
+                            <span id="sinopsis6" class="card-options-info-excerpts">Cole Young, el luchador de MMA, acostumbrado a recibir
                                 palizas por dinero, desconoce su ascendencia, y tampoco sabe por qué el
                                 emperador Shang Tsung de Outworld ha enviado a su mejor guerrero, Sub-Zero,
                                 un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación,
@@ -138,8 +134,8 @@
                 <div class="movie">
                     <div class="movie-image">
                        <span class="play" style="display: none;">
-                            <span class="name">Nobody</span>
-                            <span class="sinopsis">Hutch, un hombre corriente,
+                            <span id="titulo7" class="card-options-info-excerpts">Nobody</span>
+                            <span id="sinopsis7" class="card-options-info-excerpts">Hutch, un hombre corriente,
                                 deja que roben en su casa sin oponer resistencia.
                                 Su esposa y su hijo empiezan a tratarlo con frialdad,
                                 decepcionados por su cobardía, por lo que Hutch cambia de
@@ -152,8 +148,8 @@
                 <div class="movie">
                     <div class="movie-image">
                         <span class="play" style="display: none;">
-                            <span class="name">Space Jam A New Legacy</span>
-                            <span class="sinopsis">Atrapado en el espacio digital,
+                            <span id="titulo8" class="card-options-info-excerpts">Space Jam A New Legacy</span>
+                            <span id="sinopsis8" class="card-options-info-excerpts">Atrapado en el espacio digital,
                                 la superestrella del baloncesto LeBron James se une a la banda de
                                 los Looney Tunes para derrotar al Goon Squad en un juego de baloncesto
                                 y salvar a su hijo.</span>
@@ -165,8 +161,9 @@
                 <div class="movie">
                     <div class="movie-image">
                           <span class="play" style="display: none;">
-                            <span class="name">Venom Let There Be Carnage</span>
-                            <span class="sinopsis">Después de encontrar un cuerpo anfitrión en el
+                            <span id="titulo9" class="card-options-info-excerpts">Venom Let There Be Carnage</span>
+                            <span id="sinopsis9" class="card-options-info-excerpts">
+                                Después de encontrar un cuerpo anfitrión en el
                                 periodista de investigación Eddie Brock, el simbionte alienígena
                                 debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino
                                 en serie Cletus Kasady.</span>
@@ -178,22 +175,15 @@
                 <div class="movie last">
                     <div class="movie-image">
                         <span class="play" style="display: none;">
-                            <span class="name">Suicide Squad</span>
-                            <span class="sinopsis">Este es el infierno: Belle Reve,
-                                la prisión con el mayor índice de mortalidad de los
-                                EE. UU. Ahí van a parar los peores supervillanos,
-                                que harán lo imposible por escapar, incluso unirse al Cuerpo Especial X,
-                                supersecreto y superturbio. ¿La tarea a todo o nada de hoy? Reunir un
-                                grupo de estafadores, como Bloodsport, Pacificador, Capitán Bumerang,
-                                Cazador de Ratas 2, Savant, Rey Tiburón, Blackguard, Jabalina y nuestra
-                                psicópata preferida, Harley Quinn. Luego, armar al grupo hasta los dientes
-                                y tirarlo (literalmente) en la isla remota Corto Maltés, repleta de enemigos.
-                                El escuadrón camina por la selva atestada de adversarios militares y fuerzas
-                                guerrilleras en una misión de búsqueda y aniquilación. Solo tienen al Cnel.
-                                Rick Flag para poner orden… y los informáticos del gobierno de Amanda Waller
-                                en los audífonos, siguiendo cada paso. Y, como siempre, un paso en falso y
-                                mueren (ya sea a manos de los adversarios, de un colega o de Waller).
-                                Si alguien apuesta, lo sensato es hacerlo en su contra... en contra de todos.</span>
+                            <span id="titulo10" class="card-options-info-excerpts">Suicide Squad</span>
+                            <span id="sinopsis10" class="card-options-info-excerpts">
+                                Un grupo de super villanos se
+                                encuentran encerrados en Belle Reve, una prisión de alta seguridad con la tasa de
+                                mortalidad más alta de Estados Unidos. Para salir de allí harán cualquier cosa,
+                                incluso unirse al grupo Task Force X, dedicado a llevar a cabo misiones suicidas bajo
+                                las órdenes de Amanda Waller. Fuertemente armados son enviados a la isla Corto Maltese,
+                                una jungla repleta de enemigos.
+                            </span>
                         </span>
                         <a href="#"><img src="css/images/suicide_squad.jpg" alt></a>
                         <a href="https://www.youtube.com/watch?v=jz1FrtMIh5c">Ver trailer</a>

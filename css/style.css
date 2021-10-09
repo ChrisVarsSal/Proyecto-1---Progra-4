@@ -116,7 +116,7 @@ h2 {
 #menu {
 	display:block;
 	clear:right;
-	padding:8px 0;
+	padding-top: 30px;
 }
 #menu ul, ol {
 	list-style:none;
@@ -160,7 +160,8 @@ h2 {
 }
 .box .head {
 	width:980px;
-	padding-top:14px;
+	padding-top:30px;
+	padding-right: 25px;
 	padding-bottom:11px;
 }
 .box .head h2 {
@@ -200,6 +201,166 @@ h2 {
 	z-index:5;
 	cursor:pointer;
 	display:none;
+}
+#titulo1{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis1{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:10px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
+}
+#titulo2{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis2{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:10px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
+}
+#titulo3{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis3{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:7px;
+	text-align:center;
+	padding-top:2px;
+	display:block;
+}
+#titulo4{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis4{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:10px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
+}
+#titulo5{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis5{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:10px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
+}
+#titulo6{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis6{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:7px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
+}
+#titulo7{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis7{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:10px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
+}
+#titulo8{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis8{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:10px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
+}
+#titulo9{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis9{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:10px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
+}
+#titulo10{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:14px;
+	text-align:center;
+	padding-top:30px;
+	display:block;
+}
+#sinopsis10{
+	font-weight:bold;
+	color: lightgoldenrodyellow;
+	font-size:8px;
+	text-align:center;
+	padding-top:10px;
+	display:block;
 }
 .movie span.name {
 	font-weight:bold;
@@ -266,35 +427,38 @@ footer .rf {
 	font-size: 0.875em;
 	cursor: pointer;
 }
-#registro #boton:hover{
-	background: slategrey;
+#submenu {
+	display:block;
+	clear:right;
+	padding-bottom: 50px;
+	padding-left: 650px;
 }
-#cuenta{
-	font-family: "Roboto", sans-serif;
-	text-transform: uppercase;
-	outline: 0;
-	background: black;
-	width: 7%;
-	border: 0;
-	padding: 0.9375em;
-	font-size: 0.875em;
-	cursor: pointer;
+#submenu ul, ol {
+	list-style:none;
 }
-#cuenta #boton:hover{
-	background: slategrey;
+#submenu ul li {
+	background-color: black;
+	float:left;
+	display:inline;
+	padding-right:23px;
 }
-
-#pedidos{
-	font-family: "Roboto", sans-serif;
-	text-transform: uppercase;
-	outline: 0;
-	background: black;
-	width: 7%;
-	border: 0;
-	padding: 0.9375em;
-	font-size: 0.875em;
-	cursor: pointer;
+#submenu ul li a {
+	font-size:14px;
+	font-weight:bold;
+	color: white;
+	line-height:24px;
+	text-decoration:none;
 }
-#pedidos #boton:hover{
-	background: slategrey;
+#submenu ul li a:hover{
+	background-color: slategrey;
+}
+#submenu li ul {
+	display: none;
+	position: absolute;
+}
+#submenu li:hover > ul{
+	display: block;
+}
+#submenu li ul li{
+	position: relative;
 }
