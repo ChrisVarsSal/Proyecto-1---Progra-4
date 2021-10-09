@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Geolocalizacion</title>
+    <style>
+        #map{
+            height: 30rem;
+            width: 24rem;
+        }
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="Img/Star_Wars_The_Clone_Wars.png" alt="Portada de CloneWars" />
+    <span id="titulo"> Illusion Films Costa Rica </span>
+</header>
+
+<nav>
+    <a href="#"> <i class="fa fa-home fa-fw"></i> Inicio </a>
+    <a href="Pcontactenos.html"> Contactenos </a>
+    <a href="index.html"> Volver a la pagina principal </a>
+</nav>
+
+<section>
+    <h1> Star Wars</h1>
+    <h2> Informacíon de la serie</h2>
+
+
+    <p class="estiloParrafo"> Star Wars: The Clone Wars (titulada Star Wars: La guerra de los clones en hispanoamérica) es una serie de televisión con animación 3D CGI,
+        creada por Lucasfilm y con animación de Lucasfilm Singapur y CGCG Inc.</p>
+
+    <h3> Numeros Telefonicos: </h3>
+
+    <ul>
+        <li> +506 8548-3198 </li>
+        <li> +51 159-456-153 </li>
+        <li> +1 12-453-125-14 </li>
+    </ul>
+
+    <h3> Fax y correo electronico: </h3>
+
+    <ol>
+        <li> +506 8548-3198 </li>
+        <li> +1 22-894-157-88 </li>
+        <li> illusionmovie@gmail.com </li>
+        <li> illusionsupport@gmail.com </li>
+        <li> illusionconctact@gmail.com </li>
+    </ol>
+
+    <dl>
+        <dt> Creador:</dt>
+        <dd> George Lucas </dd>
+        <dt> Dirigido por: </dt>
+        <dd> Dave Filoni </dd>
+        <dt> Numero de episodios emitidos: </dt>
+        <dd> 133</dd>
+        <dt>Periodo de emisión</dt>
+        <dd>3 de octubre del 2008 hasta 4 de mayo del 2020</dd>
+    </dl>
+
+
+</section>
+
+<section>
+    <article> Más información </article>
+    <p class="estiloParrafo"> Resumen </p>
+
+    <div id="contenedor">
+        Star Wars, conocida también en español como La guerra de las galaxias,6​7​8​ es una franquicia compuesta primordialmente de una serie de películas concebidas por el cineasta estadounidense George Lucas en la década de 1970, y producidas y distribuidas por The Walt Disney Company a partir de 2012.
+        Su trama describe las vivencias de un grupo de personajes que habitan en una galaxia ficticia e interactúan con elementos como «la Fuerza», un campo de energía metafísico y omnipresente9 que posee un «lado luminoso» impulsado por la sabiduría, la nobleza y la justicia y utilizado por los Jedi,
+        y un «lado oscuro» usado por los Sith y provocado por la ira, el miedo y el odio.
+    </div>
+</section>
+
+<aside> Donde Encontrarnos
+    <div id=map></div>
+</aside>
+
+<footer>
+    Footer de la pagina
+    <span class="estiloParrafo">Derechos Reservados 2021</span>
+</footer>
+
+<script src="js/geolocation.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF85uOBgW4kL8hXFnIpL_eUIgH2OWd7LU&callback=initMap"
+></script>
+</body>
+</html>

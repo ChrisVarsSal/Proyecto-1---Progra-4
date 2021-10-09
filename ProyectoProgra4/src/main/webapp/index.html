@@ -6,8 +6,8 @@
     <title>Pagina de solicitudes</title>
     <link rel="stylesheet" href="CSS/estilosSolicitudes.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+<!--    <script src='https://www.google.com/recaptcha/api.js'></script>-->
+<!--    <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>-->
     <script>
         grecaptcha.ready(() => {
             grecaptcha.render('html_element', {
@@ -15,6 +15,16 @@
             });
         });
     </script>
+<!--    <script src="https://www.google.com/recaptcha/api.js?render=6LdOsrkUAAAAAG-u7DAJKXDadUiuo3xwT_R0zjke"></script>-->
+<!--    <script>-->
+<!--        grecaptcha.ready(function() {-->
+<!--            grecaptcha.execute('6LchzqUcAAAAAGN2-Jox-lAVHmgdeUsNOfp_iZsl', {action: 'homepage'}).then(function(token) {-->
+<!--                document.getElementById('g-recaptcha-response').value = token;-->
+<!--               // console.log(token);-->
+
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
 </head>
 <body>
     <form  method="POST" action="Pedidos" id="form">
@@ -64,9 +74,16 @@
                 <textarea id="extrainfo" name="extrainfo" rows="4" cols="50">
                 </textarea>
             </div>
+<!--            <div>-->
+<!--                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">-->
+<!--                <input type="hidden" name="action" value="validate_captcha">-->
+<!--                This site is protected by reCAPTCHA and the Google-->
+<!--                <a href="https://policies.google.com/privacy">Privacy Policy</a> and-->
+<!--                <a href="https://policies.google.com/terms">Terms of Service</a> apply.-->
+<!--            </div>-->
             <div class="g-recaptcha"
-                 data-sitekey="6LemvZccAAAAAAHXe4dqgPenDLUPf-MsVVC9DuHq"></div>
-            <button type="submit" value="Send Message" >Realizar pedido</button>
+                 data-sitekey="6LemvZccAAAAAKFnbn2Fk3Apbl_tnr0I2zWsm9i1"></div>
+            <button type="submit" >Realizar pedido</button>
             <p class="warnings" id="warnings"></p>
         </div>
     </form>

@@ -11,8 +11,8 @@ import java.net.URL;
 public class VerificarRecaptcha {
 
     public static final String url = "https://www.google.com/recaptcha/api/siteverify";
-    //public static final String secret = "6LchzqUcAAAAAFgl458rLfeoylxp3b-uG75d31eF"; v3
-    public static final String secret = "6LemvZccAAAAAKFnbn2Fk3Apbl_tnr0I2zWsm9i1";
+    public static final String secret = "6LchzqUcAAAAAFgl458rLfeoylxp3b-uG75d31eF";
+//    public static final String secret = "6LemvZccAAAAAKFnbn2Fk3Apbl_tnr0I2zWsm9i1";
     private final static String USER_AGENT = "Mozilla/5.0";
 
     public static boolean verify(String gRecaptchaResponse) throws IOException {
@@ -68,4 +68,5 @@ public class VerificarRecaptcha {
             return false;
         }
     }
+
 }

@@ -29,13 +29,14 @@ form.addEventListener("submit", e=>{
         entrar = true
     }
 
-    var rcres = grecaptcha.getResponse();
-    if(rcres.length){
-        grecaptcha.reset();
-        showHideMsg("Form Submitted!","success");
-    }else{
-        showHideMsg("Please verify reCAPTCHA","error");
-    }
+    // var rcres = grecaptcha.getResponse();
+    // if(rcres.length){
+    //     grecaptcha.reset();
+    //     showHideMsg("Form Submitted!","success");
+    // }else{
+    //     showHideMsg("Please verify reCAPTCHA","error");
+    // }
+
 
     if(entrar){
         parrafo.innerHTML = warnigs

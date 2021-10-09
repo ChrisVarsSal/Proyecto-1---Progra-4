@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de contacto</title>
+  <link rel="stylesheet" href="CSS/estilosSolicitudes.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdOsrkUAAAAAG-u7DAJKXDadUiuo3xwT_R0zjke"></script>
+  <script>
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LchzqUcAAAAAGN2-Jox-lAVHmgdeUsNOfp_iZsl', {action: 'homepage'}).then(function(token) {
+        document.getElementById('g-recaptcha-response').value = token;
+        console.log(token);
+
+      });
+    });
+  </script>
+</head>
+<body>
+<form action="Contactenos" method="POST" id="Conform" name="Conform" onsubmit="return validateForm2()">
+  <div class="form">
+    <h1>Contacto</h1>
+    <div class="grupo">
+      <input type="text" name="2name" id="name" autofocus required ><span class="barra"></span>
+      <label for="">Nombre</label>
+    </div>
+    <div class="grupo">
+      <input type="text" name="2email" id="email" required><span class="barra"></span>
+      <label for="">Email</label>
+    </div>
+    <div class="grupo">
+      <input type="text" name="2miembro" id="miembro"><span class="barra"></span>
+      <label for="">Tarjeta de Miembro</label>
+    </div>
+    <div class="grupo">
+      <input type="text" name="2telefono" id="telefono"required><span class="barra"></span>
+      <label for="">Telefono</label>
+    </div>
+    <div class="grupo">
+      <h2>Comentario:</h2>
+      <textarea id="comentario" name="2comentario" rows="4" cols="50">
+      </textarea>
+    </div>
+    <div class="g-recaptcha"  data-sitekey="6LemvZccAAAAAAHXe4dqgPenDLUPf-MsVVC9DuHq"></div>
+    <button type="submit" value="submit">Enviar datos </button>
+    <button onclick="location.href='index.html'">Devolver a la pagina principal</button>
+  </div>
+</form>
+
+<!--<script defer src="js/validar.js"></script>-->
+<script>
+  function validateForm2() {
+    let x1 = document.forms["Conform"]["2email"].value;
+    let x2 = document.forms["Conform"]["2telefono"].value;
+    let x3 = document.forms["Conform"]["2miembro"].value;
+    var Vtele = /^[0-9]{8}$/;
+    var Vemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var Vid = /^([0-9]{2})-([0-9]{2})-([0-9]{2})$/;
+    var teleValid = Vtele.test(x2);
+    var emailValid = Vemail.test(x1);
+    var idValid = Vid.test(x3);
+    if (emailValid == false ) {
+      alert("Digite un email valido!");
+      return false;
+    }
+    if (teleValid == false ) {
+      alert("Digite un telefono valido!");
+      return false;
+    }
+    if (idValid == false && x3 !=""  ) {
+      alert("Digite un id de miembro en formato XX-XX-XX!");
+      return false;
+    }
+  }
+</script>
+</body>
+</html>

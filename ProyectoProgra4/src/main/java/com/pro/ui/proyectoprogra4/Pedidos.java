@@ -18,54 +18,58 @@ public class Pedidos extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        try (PrintWriter out = response.getWriter()) {
+//        try (PrintWriter out = response.getWriter()) {
 
-            String nombre, email, miembro, telefono, accion, cantidad, generos, info;
+            String nombre, correo, miembroid, tele, tipo , can, generospeli, infoe;
 
             nombre = request.getParameter("name");
 
-            email = request.getParameter("email");
+            correo = request.getParameter("email");
 
-            miembro = request.getParameter("miembro");
+            miembroid = request.getParameter("miembro");
 
-            telefono = request.getParameter("telefono");
+            tele = request.getParameter("telefono");
 
-            accion = request.getParameter("accion");
+            tipo = request.getParameter("accion");
 
-            cantidad = request.getParameter("cantidad");
+            can = request.getParameter("cantidad");
 
-            generos = request.getParameter("Encuesta");
+            generospeli = request.getParameter("Encuesta");
 
-            info = request.getParameter("extrainfo");
+            infoe = request.getParameter("extrainfo");
 
             Solicitud solicitud = new Solicitud();
 
             solicitud.setNombre(nombre);
-            solicitud.setEmail(email);
-            solicitud.setMiembro(miembro);
-            solicitud.setTelefono(telefono);
-            solicitud.setAccion(accion);
-            solicitud.setCantidad(cantidad);
-            solicitud.setGenero(generos);
-            solicitud.setInfo(info);
+            solicitud.setEmail(correo);
+            solicitud.setMiembro(miembroid);
+            solicitud.setTelefono(tele);
+            solicitud.setAccion(tipo);
+            solicitud.setCantidad(can);
+            solicitud.setGenero(generospeli);
+            solicitud.setInfo(infoe);
+
+            request.setAttribute("Solicitud", solicitud);
+            request.getRequestDispatcher("pedido.jsp").forward(request, response);
 
 
-
-            // get reCAPTCHA request param
-            String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
-            System.out.println(gRecaptchaResponse);
-            boolean verify = VerificarRecaptcha.verify(gRecaptchaResponse);
-
-            if (verify) {
-                request.setAttribute("Solicitud", solicitud);
-                request.getRequestDispatcher("pedido.jsp").forward(request, response);
-            } else {
-                RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.html");
-                out.println("<font color=red>Fallaste el captcha.</font>");
-                rd.include(request, response);
-                }
-
-            }
+//
+//            String gRecaptchaResponse = request
+//                    .getParameter("g-recaptcha-response");
+//            System.out.println(gRecaptchaResponse);
+//            boolean verify = VerificarRecaptcha.verify(gRecaptchaResponse);
+//
+//            if (verify) {
+//                request.setAttribute("Solicitud", solicitud);
+//                request.getRequestDispatcher("pedido.jsp").forward(request, response);
+//            } else {
+//                RequestDispatcher rd = getServletContext().getRequestDispatcher(
+//                        "/index.html");
+//                out.println("<font color=red>Fallaste el captcha.</font>");
+//                rd.include(request, response);
+//            }
+//
+//        }
 
     }
 }

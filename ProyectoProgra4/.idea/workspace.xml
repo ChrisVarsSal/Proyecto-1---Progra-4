@@ -9,17 +9,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fb2209b-e4a7-447a-9794-c14e6d8de1c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pro/en/solicitudes/Contacto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/Contactenos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/PContactos.html" afterDir="false" />
+    <list default="true" id="5fb2209b-e4a7-447a-9794-c14e6d8de1c6" name="Changes" comment="pedidos v2">
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/artifacts/ProyectoIllusion_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/artifacts/ProyectoIllusion_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/libraries/Maven__org_glassfish_javax_json_1_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/ProyectoIllusion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/java/com/progra/en/pedidos/Contacto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/java/com/progra/en/pedidos/Pedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/java/com/progra/ui/proyectoillusion/Contactenos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/java/com/progra/ui/proyectoillusion/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/java/com/progra/ui/proyectoillusion/Solicitudes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/java/com/progra/ui/proyectoillusion/VerificarRecaptcha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/webapp/CSS/estilosRespuesta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/webapp/CSS/estilosSolicitudes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/webapp/Pcontactenos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/webapp/RespCompra.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/src/main/webapp/js/validar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/CSS/estiloJSP.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/CSS/estilosRespuesta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/CSS/estilosSolicitudes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/Pcontactenos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/WEB-INF/classes/com/progra/en/pedidos/Contacto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/WEB-INF/classes/com/progra/ui/proyectoillusion/Contactenos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/WEB-INF/classes/com/progra/ui/proyectoillusion/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/WEB-INF/classes/com/progra/ui/proyectoillusion/Solicitudes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/ProyectoIllusion-1.0-SNAPSHOT/js/validar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoIllusion/target/classes/com/progra/ui/proyectoillusion/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/estiloJSP.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pedido1.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/Pedidos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/VerificarRecaptcha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pro/ui/proyectoprogra4/VerificarRecaptcha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Respuestapedido.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pedido.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/validar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/validar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/Respuestapedido.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pedido.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pedido.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/WEB-INF/classes/com/pro/ui/proyectoprogra4/Pedidos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/WEB-INF/classes/com/pro/ui/proyectoprogra4/Pedidos.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/WEB-INF/classes/com/pro/ui/proyectoprogra4/VerificarRecaptcha.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/WEB-INF/classes/com/pro/ui/proyectoprogra4/VerificarRecaptcha.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoProgra4-1.0-SNAPSHOT/index.html" afterDir="false" />
@@ -44,6 +90,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -67,16 +114,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ContactenosCaptcha2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\UNA\Progra 4\Proyecto-1---Progra-4\ProyectoProgra4\src\main\webapp" />
       <recent name="C:\UNA\Progra 4\Proyecto-1---Progra-4\ProyectoProgra4\src\main\webapp\CSS" />
+      <recent name="C:\UNA\Progra 4\Proyecto-1---Progra-4\ProyectoProgra4\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.53">
@@ -233,12 +283,34 @@
       <workItem from="1633206343821" duration="16853000" />
       <workItem from="1633278353372" duration="2669000" />
       <workItem from="1633281097013" duration="713000" />
-      <workItem from="1633281900161" duration="313000" />
+      <workItem from="1633281900161" duration="1129000" />
+      <workItem from="1633283566219" duration="571000" />
+      <workItem from="1633284992846" duration="1110000" />
+      <workItem from="1633288866648" duration="13326000" />
     </task>
+    <task id="LOCAL-00001" summary="pedidos v2">
+      <created>1633282528599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633282528599</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -254,8 +326,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="pedidos v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="pedidos v2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProyectoProgra4$Tomcat_9_0_53.ic" NAME="Tomcat 9.0.53 Coverage Results" MODIFIED="1633232994098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ProyectoProgra4$Tomcat_9_0_53.ic" NAME="Tomcat 9.0.53 Coverage Results" MODIFIED="1633282820837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
