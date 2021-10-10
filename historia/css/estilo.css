@@ -1,0 +1,169 @@
+* {
+    margin:0;
+    padding:0;
+    outline:0;
+}
+body {
+    font-size:12px;
+    line-height:1.3;
+    font-family:Arial, Helvetica, Sans-Serif;
+    color:#ccc;
+    background-color: antiquewhite;
+}
+a {
+    color:#e7b038;
+    text-decoration:underline;
+    cursor:pointer;
+}
+a:hover {
+    text-decoration:none;
+}
+input, textarea, select {
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+textarea {
+    overflow:auto;
+}
+.cl {
+    display:block;
+    height:0;
+    font-size:0;
+    line-height:0;
+    text-indent:-4000px;
+    clear:both;
+}
+.notext {
+    font-size:0;
+    line-height:0;
+    text-indent:-4000px;
+}
+.left, .alignleft {
+    float:left;
+    display:inline;
+}
+.right, .alignright {
+    float:right;
+    display:inline;
+}
+.text-right {
+    text-align:right;
+}
+#nombre{
+    padding-top: 100px;
+    font-size:2.1875em;
+    color: black;
+    font-weight:bold;
+}
+#logo{
+    width: 9%;
+    border-radius: 10%;
+}
+#historia{
+    padding-top: 100px;
+    font-size:1.875em;
+    color: black;
+    font-weight:bold;
+}
+#shell {
+    width:980px;
+    margin:0 auto;
+}
+#header {
+    position:relative;
+}
+#parrafo{
+    text-align: center;
+    padding-top: 30px;
+    font-size:1.25em;
+    color: blue;
+    font-weight:bold;
+}
+.social {
+    float:right;
+    width:160px;
+    padding-top:11px;
+}
+.social span {
+    float:left;
+    display:inline;
+    font-size:0.9375em;
+    color: blue;
+    line-height:16px;
+    padding-right:5px;
+}
+.social ul {
+    list-style:none;
+}
+.social ul li {
+    float:left;
+    display:inline;
+    width:16px;
+    padding-right:2px;
+}
+.social ul li a {
+    float:left;
+    display:inline;
+    width:16px;
+    height:16px;
+    background:url('social.gif') no-repeat 0 0;
+    font-size:0;
+    line-height:0;
+    text-indent:-4000px;
+}
+.social ul li a.facebook {
+    background-position:-18px 0;
+}
+#main {
+    border-bottom:1px dashed #413e3e;
+}
+#content {
+}
+.box {
+    width:980px;
+    border-bottom:1px dashed #413e3e;
+    padding-bottom:21px;
+}
+.content {
+    padding-bottom:28%;
+}
+.content .date {
+    font-size:0.625em;
+    color:#fff;
+}
+#volver a{
+    background-color: black;
+    font-size:14px;
+    font-weight:bold;
+    color: white;
+    line-height:24px;
+    text-decoration:none;
+}
+#volver a:hover{
+    background-color: slategrey;
+
+}
+footer {
+    padding:15px 0 0 0;
+    font-size:0.9375em;
+}
+footer, footer a {
+    color:#9c9c9c;
+    text-decoration:none;
+}
+footer a:hover {
+    text-decoration:none;
+}
+footer p {
+    margin:0;
+    padding:0 0 11px 0;
+    line-height:normal;
+    white-space:nowrap;
+}
+footer .lf {
+    float:left;
+}
+footer .rf {
+    float:right;
+}
+
