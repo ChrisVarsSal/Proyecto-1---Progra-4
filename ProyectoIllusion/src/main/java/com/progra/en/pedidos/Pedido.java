@@ -15,6 +15,7 @@ public class Pedido implements Serializable {
     private String genero4;
     private String genero5;
     private String info;
+    private String peli;
 
 
     public Pedido() {
@@ -134,23 +135,42 @@ public class Pedido implements Serializable {
         this.info = info;
     }
 
-    public Float Precio() {
-        float p,r,f,c;
-        String g,a;
-        g = getAccion();
-        c = Float.parseFloat(getCantidad());
-        a = getAccion();
-        if(g == "Comprar")
-            p = 7000;
-        else
-            p = 2500;
+    public String getPeli() {
+        return peli;
+    }
 
-        r = c * p ;
+    public void setPeli(String peli) {
+        this.peli = peli;
+    }
+
+    public Float Precio() {
+        float r,f,c;
+        Integer pre;
+        String a;
+        c = Float.parseFloat(getCantidad());
+        a = getMiembro();
+        pre = PrecioPre(getAccion());
+
+        r = c * pre ;
 
         if(a == "")
             f = r;
         else
             f = (r/100)*95;
         return f;
+    }
+    public Integer PrecioPre(String acc){
+        Integer price;
+        switch(acc) {
+            case "Comprar":
+                price = 7000;
+                break;
+            case "Rentar":
+                price = 2500;
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + acc);
+        }
+        return price;
     }
 }

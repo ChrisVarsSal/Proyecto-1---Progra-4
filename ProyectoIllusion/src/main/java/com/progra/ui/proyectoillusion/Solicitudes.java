@@ -19,7 +19,7 @@ public class Solicitudes extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         try (PrintWriter out = response.getWriter()) {
-        String nombre, correo, id, telefono, tipo, cantidad, genero1, genero2, genero3, genero4, genero5, info;
+        String nombre, correo, id, telefono, tipo, cantidad, genero1, genero2, genero3, genero4, genero5, info, peli;
 
         nombre =  request.getParameter("1name");
 
@@ -41,6 +41,8 @@ public class Solicitudes extends HttpServlet {
 
         info = request.getParameter("1extrainfo");
 
+        peli = request.getParameter("1peli");
+
         Pedido pedido = new Pedido();
 
         pedido.setNombre(nombre);
@@ -55,10 +57,7 @@ public class Solicitudes extends HttpServlet {
         pedido.setGenero4(genero4);
         pedido.setGenero5(genero5);
         pedido.setInfo(info);
-
-//        request.setAttribute("Pedido", pedido);
-//        request.getRequestDispatcher("RespCompra.jsp").forward(request,response);
-
+        pedido.setPeli(peli);
 
             String gRecaptchaResponse = request
                     .getParameter("g-recaptcha-response");
@@ -70,7 +69,7 @@ public class Solicitudes extends HttpServlet {
                 request.getRequestDispatcher("RespCompra.jsp").forward(request, response);
             } else {
                 RequestDispatcher rd = getServletContext().getRequestDispatcher(
-                        "/index.html");
+                        "/Ppedidos.html");
                 out.println("<font color=red>Fallaste el captcha.</font>");
                 rd.include(request, response);
             }

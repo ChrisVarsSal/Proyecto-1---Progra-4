@@ -16,9 +16,9 @@ body {
     background: #4568DC;
     border-top: 4rem;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right,#6495ED, MediumTurquoise);
+    background: -webkit-linear-gradient(to right,#C0392BFF, black);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6495ED, MediumTurquoise);
+    background: linear-gradient(to right, #C0392BFF, black);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 120rem;
     display: flex;
@@ -115,7 +115,7 @@ input:valid~label{
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #C0392BFF, gray);
     transition: 0.3s ease width;
     left: 0;
 }
@@ -136,9 +136,9 @@ button{
     font-family: 'roboto';
     background: #4568DC;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: -webkit-linear-gradient(to right, #C0392BFF, gray);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #C0392BFF, gray);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     display: block;

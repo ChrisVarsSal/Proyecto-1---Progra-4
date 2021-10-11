@@ -9,7 +9,7 @@
 <body>
 <form action="" method="" id="form">
     <div class="form">
-        <h2>Informacion:</h2>
+        <h2>Factura:</h2>
         <div class="grupo">
             <label for="">Nombre: </label>
             <%= Pedido.getNombre()%>
@@ -60,18 +60,21 @@
             <%=Pedido.getInfo()%>
         </div>
         <div class="grupo">
+            <label for="">Pelicula seleccionada: </label>
+            <%=Pedido.getPeli()%>
+        </div>
+        <div class="grupo">
             <label for="">Recibo: </label>
             <%=Pedido.Precio()%>
         </div>
         <div class="grupo">
-            <a href="#" onclick="history.go(-1)">Volver a la pagina principal</a>
+            <label for="">Su solicitud a sido enviada con exito! </label>
+        </div>
+        <div class="grupo">
+            <a href="#" onclick="history.go(-2)">Volver a la pagina anterior</a>
         </div>
     </div>
 </form>
-<%--<form action="index.html" method="get" target="_blank">--%>
-<%--    <button type="submit">Pagina Principal</button>--%>
-<%--</form>--%>
-<a href="#" onclick="history.go(-1)">Go Back</a>
 <script defer src="js/validar.js"></script>
 </body>
 </html>

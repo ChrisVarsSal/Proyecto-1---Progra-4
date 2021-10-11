@@ -31,6 +31,12 @@
             <label for="">Comentario: </label>
             <%=Contacto.getInfo()%>
         </div>
+        <div class="grupo">
+            <label for="">Su informacion a sido enviada con exito! </label>
+        </div>
+        <div class="grupo">
+            <a href="#" onclick="history.go(-2)">Volver a la pagina anterior</a>
+        </div>
     </div>
 </form>
 </body>

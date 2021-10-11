@@ -1,106 +1,717 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de solicitudes</title>
-    <link rel="stylesheet" href="CSS/estilosSolicitudes.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
-    <script>
-        grecaptcha.ready(() => {
-            grecaptcha.render('html_element', {
-                'sitekey' : '6LemvZccAAAAAAHXe4dqgPenDLUPf-MsVVC9DuHq'
-            });
-        });
-    </script>
+    <title>
+        Flix
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
 </head>
+
 <body>
-    <form  method="POST"  action="Solicitudes" id="form" name="form" onsubmit="return validateForm1()">
-        <div class="form">
-            <h1>Solicitud</h1>
-            <div class="grupo">
-                <input type="text" name="1name" id="name" autofocus required ><span class="barra"></span>
-                <label for="">Nombre</label>
+
+<!-- NAV -->
+<div class="nav-wrapper">
+    <div class="container">
+        <div class="nav" id="nav">
+            <a href="#" class="logo">
+                <i class='bx bx-movie-play bx-tada main-color'></i>I<span class="main-color">LL</span>usion
+                F<span class="main-color">I</span>LMS
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li>Búsqueda: <input type="search" name="busqueda" placeholder="">
+                <input type="submit" value="Buscar"></li>
+                <li><a href="Pcatalogo.html">Catalogo</a></li>
+                <li><a href="Pcontactenos.html">Contactenos</a></li>
+                <li><a href="Pvisitenos.html">Visitenos</a></li>
+                <li><a href="Phistoria.html">Historia</a></li>
+                <li>
+                    <a href="#" class="btn btn-hover">
+                        <span>Registrarse</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-hover">
+                        <span>Ingresar</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- MOBILE MENU TOGGLE -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="hamburger"></div>
             </div>
-            <div class="grupo">
-                <input type="text" name="1email" id="email" required><span class="barra"></span>
-                <label for="">Email</label>
-            </div>
-            <div class="grupo">
-                <input type="text" name="1miembro" id="miembro"><span class="barra"></span>
-                <label for="">Tarjeta de Miembro</label>
-            </div>
-            <div class="grupo">
-                <input type="text" name="1telefono" id="telefono"required><span class="barra"></span>
-                <label for="">Telefono</label>
-            </div>
-            <div class="grupo">
-                <label for=""></label>
-                <h2>Seleccione una opcion:</h2>
-                <select name="1accion" id="accion"required><span class="barra"></span>
-                 
-                    <option value ="Comprar" >Comprar</option>
-                    <option value ="Rentar" >Rentar</option>
-                </select>
-            </div> 
-            <div class="grupo">
-                <input type="number" name="1cantidad" id="cantidad" min="1" max="100" step="1" value="1"required><span class="barra"></span>
-                <label for="">Cantidad:</label>
-            </div>
-            <div class="grupo">
-                <h2>Seleccione los generos de su agrado:</h2>
-                <fieldset>
-                    <input type="checkbox" value="Seleccionada."  id="terror" name="1encuesta">Terror
-                    <input type="checkbox" value="Seleccionada." id="comedia" name="2encuesta">Comedia
-                    <input type="checkbox" value="Seleccionada." id="accionE" name="3encuesta">Acción
-                    <input type="checkbox" value="Seleccionada." id="fantasia" name="4encuesta">Fantasía
-                    <input type="checkbox" value="Seleccionada." id="romanticas" name="5encuesta">Románticas
-                </fieldset>
-            </div>
-            <div class="grupo">
-                <h2>Información adicional:</h2>  
-                <textarea id="extrainfo" name="1extrainfo" rows="4" cols="50">
-                </textarea>
-            </div>
-            <div class="g-recaptcha"
-                 data-sitekey="6LemvZccAAAAAAHXe4dqgPenDLUPf-MsVVC9DuHq"></div>
-            <button type="submit" value="submit" >Realizar pedido</button>
-            <button onclick="location.href='Pcontactenos.html'">Devolver a la pagina principal</button>
-            <button onclick="location.href='Pvisitenos.html'">Devolver geo</button>
         </div>
-    </form>
-<!--    <form action="" method="get" target="_blank">-->
-<!--        <button type="submit" href="#" onclick="history.go(-1)">Pagina Principal</button>-->
-<!--    </form>-->
-<!--    <form action="Pcontactenos.html" method="get" target="_blank" id="backform" name="backform" class="boton">-->
-<!--         <button type="submit">Pagina de contacos</button>-->
-<!--    </form>-->
-    <script defer src="js/validar.js"></script>
-    <script>
-        function validateForm1() {
-            let x1 = document.forms["form"]["1email"].value;
-            let x2 = document.forms["form"]["1telefono"].value;
-            let x3 = document.forms["form"]["1miembro"].value;
-            var Vtele = /^[0-9]{8}$/;
-            var Vemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            var Vid = /^([0-9]{2})-([0-9]{2})-([0-9]{2})$/;
-            var teleValid = Vtele.test(x2);
-            var emailValid = Vemail.test(x1);
-            var idValid = Vid.test(x3);
-            if (emailValid == false ) {
-                alert("Digite un email valido!");
-                return false;
-            }
-            if (teleValid == false ) {
-                alert("Digite un telefono valido!");
-                return false;
-            }
-            if (idValid == false && x3 !=""  ) {
-                alert("Digite un id de miembro en formato XX-XX-XX!");
-                return false;
-            }
-        }
-    </script>
+    </div>
+</div>
+<!-- END NAV -->
+<div class="container">
+    <div class="nav" id="nav">
+            <i class='bx bx-movie-play bx-tada main-color'></i><span class="main-color"></span>
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="PMisionVision.html">Mision y Vision</a></li>
+        </ul>
+        <!-- MOBILE MENU TOGGLE -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hamburger"></div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- END NAV -->
+
+<!-- HERO SECTION -->
+<div class="hero-section">
+    <!-- HERO SLIDE -->
+    <div class="hero-slide">
+        <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+            <!-- SLIDE ITEM -->
+            <div class="hero-slide-item">
+                <img src="./images/black-banner.png" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Black Panther
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Black Panther cuenta la historia de T’Challa quien, después de los acontecimientos de ‘Capitán América: Civil War’, vuelve a casa, a la nación de Wakanda, aislada y muy avanzada tecnológicamente, para ser proclamado Rey.
+                        </div>
+                        <div class="item-action top-down delay-6">
+<!--                            <a href="#" class="btn btn-hover">-->
+                                <div id=contenedorVideoB>
+                                    <video width="350" height="280" controls>
+                                        <source src="Videos/Marvel%20Studios'%20Black%20Panther%20-%20Official%20Trailer.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <i class="bx bxs-right-arrow"></i>
+<!--                                <span>Watch now</span>-->
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SLIDE ITEM -->
+            <!-- SLIDE ITEM -->
+            <div class="hero-slide-item">
+                <img src="./images/supergirl-banner.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Supergirl
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Supergirl es un drama de acción y aventuras basado en el personaje de DC Comics Kara Zor-El (Melissa Benoist), la prima de Superman, quien después de 12 años escondiendo sus poderes al mundo decide aceptar sus habilidades para convertirse en una superheroína.
+                        </div>
+                        <div class="item-action top-down delay-6">
+<!--                            <a href="#" class="btn btn-hover">-->
+                                <div id=contenedorVideoS>
+                                    <video width="350" height="280" controls>
+                                        <source src="Videos/Supergirl%20Season%201%20Trailer.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <i class="bx bxs-right-arrow"></i>
+<!--                                <span>Watch now</span>-->
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SLIDE ITEM -->
+            <!-- SLIDE ITEM -->
+            <div class="hero-slide-item">
+                <img src="./images/wanda-banner.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Wanda Vision
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Wanda Maximoff y Vision llegan a vivir al pueblo de Westview, donde tendrán que esconder sus súperpoderes para acoplarse a la vida mundana de los suburbios. Sin embargo nada es lo que parece y poco a poco la realidad comenzará a desvanecerse.
+                        </div>
+                        <div class="item-action top-down delay-6">
+                            <div id=contenedorVideoW>
+                                <video width="350" height="280" controls>
+                                    <source src="Videos/WandaVision.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                                <i class="bx bxs-right-arrow"></i>
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SLIDE ITEM -->
+        </div>
+    </div>
+    <!-- END HERO SLIDE -->
+    <!-- TOP MOVIES SLIDE -->
+    <div class="top-movies-slide">
+        <div class="owl-carousel" id="top-movies-slide">
+            <!-- MOVIE ITEM -->
+            <div class="movie-item">
+                <img src="./images/series/supergirl.jpg" alt="">
+                <span id="sinopsis1" class="card-options-info-excerpts">Supergirl es un drama de acción y
+                         aventuras basado en el personaje de DC Comics Kara Zor-El (Melissa Benoist), la prima de Superman,
+                        quien después de 12 años escondiendo ...
+                        </span>
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Supergirl
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                        <div class="movie-info">
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <div class="movie-item">
+                <img src="./images/movies/captain-marvel.png" alt="">
+                <span id="sinopsis1" class="card-options-info-excerpts">Jackson.​ Situada en el año 1995,
+                    la historia sigue a Carol Danvers, una piloto de la Fuerza Aérea de Estados Unidos,
+                    que se convierte en la Capitana Marvel después de que la Tierra haya quedado atrapada ...
+                </span>
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Captain Marvel
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                        <div class="movie-info">
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <div class="movie-item">
+                <img src="./images/cartoons/demon-slayer.jpg" alt="">
+                <span id="sinopsis1" class="card-options-info-excerpts">Mientras en el sueño de Rengoku, la niña que se
+                    infiltró en su mente consigue abrirse paso por el límite del sueño y llegar a su núcleo, pero cuando estaba a ...
+                </span>
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Infinity Train
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                        <div class="movie-info">
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <div class="movie-item">
+                <img src="./images/movies/blood-shot.jpg" alt="">
+                <span id="sinopsis1" class="card-options-info-excerpts">Murray Ray Garrison es resucitado por un equipo de científicos.
+                    Mejorado con nanotecnología, se convierte en una máquina de matar biotecnológica sobrehumana. ...
+                </span>
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Bloodshot
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                        <div class="movie-info">
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <div class="movie-item">
+                <img src="./images/series/wanda.png" alt="">
+                <span id="sinopsis1" class="card-options-info-excerpts">Una peligrosa conspiración,
+                                relacionada con su pasado, persigue a Natasha Romanoff,
+                                también conocida como Viuda Negra. La agente tendrá que lidiar con
+                                las consecuencias de haber sido espía, así como con las relaciones rotas,
+                                para sobrevivir.
+                </span>
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Wanda Vision
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+ </span>
+                        </div>
+                        <div class="movie-info">
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <div class="movie-item">
+                <img src="./images/movies/bat-man.jpg" alt="">
+                <span id="sinopsis1" class="card-options-info-excerpts">Han pasado ocho años desde que Batman desapareció en la noche,
+                    pasando en ese instante de héroe a fugitivo. Asumiendo la culpa por la muerte del fiscal del distrito Harvey Dent,
+                    el Caballero Oscuro sacrificó todo por lo que él y el comisario Gordon esperaban que fuese un fin mayor. ...
+                </span>
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        The Dark Knight
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                        <div class="movie-info">
+                            <a href="Ppedidos.html"> Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MOVIE ITEM -->
+        </div>
+    </div>
+    <!-- END TOP MOVIES SLIDE -->
+</div>
+<!-- END HERO SECTION -->
+
+<div class="section">
+    <div class="container">
+        <div class="section-header">
+            Más solicitadas
+        </div>
+        <div class="movies-slide carousel-nav-center owl-carousel">
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+                <img src="./images/movies/theatre-dead.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Theatre of the dead
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+                <img src="./images/movies/transformer.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Transformer
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+                <img src="./images/movies/resident-evil.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Resident Evil
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+                <img src="./images/movies/captain-marvel.png" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Captain Marvel
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+                <img src="./images/movies/hunter-killer.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Hunter Killer
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+                <img src="./images/movies/blood-shot.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Bloodshot
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+                <img src="./images/movies/call.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Call
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+        </div>
+    </div>
+</div>
+<!-- END LATEST MOVIES SECTION -->
+
+
+<!-- FOOTER SECTION -->
+<footer class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-6 col-sm-12">
+                <div class="content">
+                    <a href="#" class="logo">
+                        <i class='bx bx-movie-play bx-tada main-color'></i>I<span class="main-color">LL</span>usion
+                        F<span class="main-color">I</span>LMS
+                    </a>
+                    <p>
+                         Illusion Films Costa Rica es una empresa dedicada a la venta y renta de series y peliculas online, con las mayores novedades y al mejor precio.
+                    </p>
+                    <div class="social-list">
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Flix</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Pricing plans</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Browse</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Pricing plans</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Help</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Pricing plans</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Download app</b></p>
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/google-play.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/app-store.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER SECTION -->
+
+<!-- COPYRIGHT SECTION -->
+<div class="copyright">
+    Copyright 2021 <a href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q" target="_blank">
+    Proyecto UNA</a>
+</div>
+<!-- END COPYRIGHT SECTION -->
+
+<!-- SCRIPT -->
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- OWL CAROUSEL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<!-- APP SCRIPT -->
+<script src="app.js"></script>
+
 </body>
+
 </html>
